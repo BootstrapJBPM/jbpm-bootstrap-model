@@ -8,6 +8,7 @@ public class Project implements Serializable {
     private static final long serialVersionUID = 147465343216850011L;
 
     private String name;
+    private String packageName;
     private String version;
     private List<String> options;
     private List<String> capabilities;
@@ -20,6 +21,14 @@ public class Project implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPackageName() {
+        return packageName;
+    }
+
+    public void setPackageName(String packageName) {
+        this.packageName = packageName;
     }
 
     public String getVersion() {
