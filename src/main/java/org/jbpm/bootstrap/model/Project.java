@@ -1,7 +1,9 @@
 package org.jbpm.bootstrap.model;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Project implements Serializable {
 
@@ -14,6 +16,12 @@ public class Project implements Serializable {
     private List<String> capabilities;
 
     private String location;
+    
+    private Map<String, String> mappedVersions = new HashMap<String, String>();
+    
+    public Project() {
+        this.mappedVersions.put("Enterprise 7.1", "7.11.0.Final-redhat-00003");
+    }
 
     public String getName() {
         return name;
@@ -36,7 +44,7 @@ public class Project implements Serializable {
     }
 
     public void setVersion(String version) {
-        this.version = version;
+        this.version = mappedVersions.getOrDefault(version, version);
     }
 
     public List<String> getOptions() {
