@@ -16,13 +16,14 @@ public class Project implements Serializable {
     private List<String> capabilities;
 
     private String location;
-    
+
     private Map<String, String> mappedVersions = new HashMap<String, String>();
-    
+
     public Project() {
-        this.mappedVersions.put("Enterprise 7.1", "7.11.0.Final-redhat-00003");
-        this.mappedVersions.put("Enterprise 7.1.1", "7.11.0.Final-redhat-00004");
         this.mappedVersions.put("Enterprise 7.2", "7.14.0.Final-redhat-00002");
+        this.mappedVersions.put("Enterprise 7.2.1", "7.14.0.Final-redhat-00004");
+        this.mappedVersions.put("Enterprise 7.3", "7.18.0.Final-redhat-00002");
+        this.mappedVersions.put("Enterprise 7.3.1", "7.18.0.Final-redhat-00004");
     }
 
     public String getName() {
