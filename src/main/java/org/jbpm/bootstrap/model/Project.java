@@ -24,7 +24,8 @@ public class Project implements Serializable {
         this.mappedVersions.put("Enterprise 7.2.1", "7.14.0.Final-redhat-00004");
         this.mappedVersions.put("Enterprise 7.3", "7.18.0.Final-redhat-00002");
         this.mappedVersions.put("Enterprise 7.3.1", "7.18.0.Final-redhat-00004");
-        this.mappedVersions.put("Enterprise 7.4", "7.23.0.Final-redhat-00002");        
+        this.mappedVersions.put("Enterprise 7.4", "7.23.0.Final-redhat-00002");
+        this.mappedVersions.put("Enterprise 7.4.1", "7.23.0.Final-redhat-00003");  
     }
 
     public String getName() {
