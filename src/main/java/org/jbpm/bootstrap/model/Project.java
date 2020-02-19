@@ -25,10 +25,10 @@ public class Project implements Serializable {
         this.mappedVersions.put("Enterprise 7.3", "7.18.0.Final-redhat-00002");
         this.mappedVersions.put("Enterprise 7.3.1", "7.18.0.Final-redhat-00004");
         this.mappedVersions.put("Enterprise 7.4", "7.23.0.Final-redhat-00002");
-        this.mappedVersions.put("Enterprise 7.4.1", "7.23.0.Final-redhat-00003");  
-        this.mappedVersions.put("Enterprise 7.5.0", "7.26.0.Final-redhat-00005");  
-        this.mappedVersions.put("Enterprise 7.5.1", "7.26.0.Final-redhat-00006");          
-	this.mappedVersions.put("Enterprise 7.6.0", "7.30.0.Final-redhat-00003")
+        this.mappedVersions.put("Enterprise 7.4.1", "7.23.0.Final-redhat-00003");
+        this.mappedVersions.put("Enterprise 7.5.0", "7.26.0.Final-redhat-00005");
+        this.mappedVersions.put("Enterprise 7.5.1", "7.26.0.Final-redhat-00006");
+        this.mappedVersions.put("Enterprise 7.6.0", "7.30.0.Final-redhat-00003");
     }
 
     public String getName() {
@@ -81,7 +81,8 @@ public class Project implements Serializable {
 
     @Override
     public String toString() {
-        return "Project [name=" + name + ", version=" + version + ", options=" + options + ", capabilities=" + capabilities + ", location=" + location + "]";
+        return "Project [name=" + name + ", version=" + version + ", options=" + options + ", capabilities="
+                + capabilities + ", location=" + location + "]";
     }
 
 }
