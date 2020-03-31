@@ -6,4 +6,9 @@
   <version>1.0.0</version>
   <name>jBPM :: Bootstrap :: Data Model</name>
   <description>jBPM :: Bootstrap :: Data Model definitions</description>
+
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
 </project>
