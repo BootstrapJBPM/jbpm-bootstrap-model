@@ -33,6 +33,7 @@ public class Project implements Serializable {
         this.mappedVersions.put("Enterprise 7.8.0", "7.39.0.Final-redhat-00005");
         this.mappedVersions.put("Enterprise 7.8.1", "7.39.0.Final-redhat-00007");
         this.mappedVersions.put("Enterprise 7.9.0", "7.44.0.Final-redhat-00003");
+        this.mappedVersions.put("Enterprise 7.10.0", "7.48.0.Final-redhat-00004");
         this.mappedVersions.put("Enterprise 7.10.1", "7.48.0.Final-redhat-00006");
     }
 
